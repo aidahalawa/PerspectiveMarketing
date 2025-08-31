@@ -13,8 +13,8 @@ const AboutUsSection: React.FC = () => (
       <div className="mt-12 grid grid-cols-1 items-center gap-12 md:grid-cols-2">
         <AnimateOnScroll>
           <img 
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop"
-            alt="Equipo colaborando en un ambiente positivo"
+            src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2232&auto=format&fit=crop"
+            alt="Equipo colaborando en un ambiente positivo y corporativo"
             className="rounded-2xl object-cover shadow-xl aspect-video"
           />
         </AnimateOnScroll>
