@@ -14,7 +14,7 @@ const Stat: React.FC<StatProps> = ({ value, label }) => (
 );
 
 const OurImpact: React.FC = () => (
-  <section className="border-y border-black/5 bg-gradient-to-b from-white to-amber-50/60 py-16 dark:border-white/10 dark:from-slate-900 dark:to-slate-900">
+  <section id="impact" className="border-y border-black/5 bg-gradient-to-b from-white to-amber-50/60 py-16 dark:border-white/10 dark:from-slate-900 dark:to-slate-900 scroll-mt-24">
     <Container>
       <SectionTitle title="Nuestro Impacto" subtitle="Resultados que nos mueven todos los días." />
       <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">

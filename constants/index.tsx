@@ -97,6 +97,11 @@ export const icons: { [key: string]: JSX.Element } = {
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 4.316 1.906 6.03l-.534 1.956 1.993-.52z" />
     </svg>
   ),
+  whatsapp_footer: (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 4.316 1.906 6.03l-.534 1.956 1.993-.52z" />
+    </svg>
+  ),
   award: (
     <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
       <circle cx="12" cy="8" r="6" />
@@ -122,7 +127,7 @@ export const VALUES: Value[] = [
 
 export const BENEFITS: Benefit[] = [
   { icon: "up", title: "Plan de Carrera Real", description: "Oportunidades reales de crecer y liderar tu propio equipo." },
-  { icon: "money", title: "Condiciones Excelentes", description: "Salario fijo + comisiones altas. Ingreso medio de 1.100–1.200 € / mes." },
+  { icon: "money", title: "Condiciones Excelentes", description: "Salario fijo + comisiones altas." },
   { icon: "smile", title: "Ambiente Sano y Positivo", description: "Equipo joven, dinámico y con un propósito que nos une." },
   { icon: "contract", title: "Contrato Indefinido", description: "Estabilidad desde el primer día para que te centres en crecer." },
 ];
@@ -161,7 +166,6 @@ const promotorDetails = {
   whatWeOffer: [
     "Media jornada (MAÑANAS) de lunes a viernes – 5h/día.",
     "Contrato indefinido con fijo + comisiones altas.",
-    "Ingreso medio 1.100–1.200 €/mes con objetivos realistas.",
     "Incentivos extra y formación continua.",
     "Ambiente positivo y motivador.",
   ],
@@ -175,7 +179,7 @@ export const JOBS: Job[] = [
     id: 1,
     type: "captador",
     location: "Madrid",
-    salary: "900€–1600€",
+    salary: "Fijo + Comisiones",
     url: COMPANY_JOBS_URL,
     details: captadorDetails,
   },
@@ -183,7 +187,7 @@ export const JOBS: Job[] = [
     id: 2,
     type: "promotor",
     location: "Madrid",
-    salary: "950€–1600€",
+    salary: "Fijo + Comisiones",
     url: COMPANY_JOBS_URL,
     details: promotorDetails,
   },
@@ -191,7 +195,7 @@ export const JOBS: Job[] = [
     id: 3,
     type: "promotor",
     location: "Boadilla del Monte",
-    salary: "950€–1600€",
+    salary: "Fijo + Comisiones",
     url: COMPANY_JOBS_URL,
     details: promotorDetails,
   },
@@ -199,7 +203,7 @@ export const JOBS: Job[] = [
     id: 4,
     type: "captador",
     location: "Hortaleza",
-    salary: "900€–1600€",
+    salary: "Fijo + Comisiones",
     url: COMPANY_JOBS_URL,
     details: captadorDetails,
   },
@@ -207,7 +211,7 @@ export const JOBS: Job[] = [
     id: 5,
     type: "promotor",
     location: "Retiro",
-    salary: "950€–1600€",
+    salary: "Fijo + Comisiones",
     url: COMPANY_JOBS_URL,
     details: promotorDetails,
   },
@@ -215,7 +219,7 @@ export const JOBS: Job[] = [
     id: 6,
     type: "captador",
     location: "Fuencarral-El Pardo",
-    salary: "900€–1600€",
+    salary: "Fijo + Comisiones",
     url: COMPANY_JOBS_URL,
     details: captadorDetails,
   },
@@ -223,7 +227,7 @@ export const JOBS: Job[] = [
     id: 7,
     type: "promotor",
     location: "Majadahonda",
-    salary: "950€–1600€",
+    salary: "Fijo + Comisiones",
     url: COMPANY_JOBS_URL,
     details: promotorDetails,
   },
@@ -231,7 +235,7 @@ export const JOBS: Job[] = [
     id: 8,
     type: "captador",
     location: "Alcorcón",
-    salary: "900€–1600€",
+    salary: "Fijo + Comisiones",
     url: COMPANY_JOBS_URL,
     details: captadorDetails,
   },
@@ -239,7 +243,7 @@ export const JOBS: Job[] = [
     id: 9,
     type: "captador",
     location: "Salamanca",
-    salary: "900€–1600€",
+    salary: "Fijo + Comisiones",
     url: COMPANY_JOBS_URL,
     details: captadorDetails,
   },
@@ -247,7 +251,7 @@ export const JOBS: Job[] = [
     id: 10,
     type: "promotor",
     location: "Serrano",
-    salary: "950€–1600€",
+    salary: "Fijo + Comisiones",
     url: COMPANY_JOBS_URL,
     details: promotorDetails,
   },
@@ -255,7 +259,7 @@ export const JOBS: Job[] = [
     id: 11,
     type: "captador",
     location: "Paseo de la Castellana",
-    salary: "900€–1600€",
+    salary: "Fijo + Comisiones",
     url: COMPANY_JOBS_URL,
     details: captadorDetails,
   },
@@ -263,7 +267,7 @@ export const JOBS: Job[] = [
     id: 12,
     type: "promotor",
     location: "Marqués de la Valdavia",
-    salary: "950€–1600€",
+    salary: "Fijo + Comisiones",
     url: COMPANY_JOBS_URL,
     details: promotorDetails,
   },

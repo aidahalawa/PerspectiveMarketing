@@ -3,7 +3,7 @@ import { icons } from '../../constants';
 
 const WhatsAppWidget: React.FC = () => (
   <a
-    href="https://wa.me/34604103188"
+    href="https://wa.me/34604103118"
     target="_blank"
     rel="noreferrer"
     aria-label="Contact via WhatsApp"

@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import TestimonialsSection from './components/TestimonialsSection';
 import ValuesSection from './components/ValuesSection';
+import AboutUsSection from './components/AboutUsSection';
 import BenefitsSection from './components/BenefitsSection';
 import OurImpact from './components/OurImpact';
 import JobsSection from './components/JobsSection';
@@ -17,7 +18,7 @@ import Modal from './components/ui/Modal';
 import JobDetails from './components/JobDetails';
 import WhatsAppWidget from './components/ui/WhatsAppWidget';
 
-const SECTION_IDS = ['home', 'testimonials', 'mission', 'benefits', 'jobs', 'contact'];
+const SECTION_IDS = ['home', 'testimonials', 'mission', 'about', 'benefits', 'impact', 'jobs', 'contact'];
 const JOBS_PER_PAGE = 5;
 
 export default function App() {
@@ -111,6 +112,7 @@ export default function App() {
         <Hero />
         <TestimonialsSection reviews={reviews} isLoading={reviewsLoading} />
         <ValuesSection />
+        <AboutUsSection />
         <BenefitsSection />
         <OurImpact />
         <JobsSection

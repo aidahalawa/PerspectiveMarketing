@@ -20,6 +20,10 @@ const Footer: React.FC = () => (
             {icons.mail}
             <a href="mailto:administracion@perspectivemarketing.es" className="underline decoration-amber-400/60 underline-offset-4 transition-colors hover:text-white">administracion@perspectivemarketing.es</a>
           </li>
+          <li className="flex items-start gap-2">
+            {icons.whatsapp_footer}
+            <a href="https://wa.me/34604103118" target="_blank" rel="noreferrer" className="underline decoration-amber-400/60 underline-offset-4 transition-colors hover:text-white">+34 604 10 31 18</a>
+          </li>
         </ul>
         <div className="mt-8 text-xs text-slate-400">
           <p>© {new Date().getFullYear()} Perspective Marketing S.L. – Todos los derechos reservados.</p>

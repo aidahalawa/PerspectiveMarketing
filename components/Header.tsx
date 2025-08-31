@@ -13,7 +13,9 @@ interface HeaderProps {
 const navLinks = [
   { href: '#testimonials', label: 'Equipo' },
   { href: '#mission', label: 'Valores' },
+  { href: '#about', label: 'Historia' },
   { href: '#benefits', label: 'Beneficios' },
+  { href: '#impact', label: 'Impacto' },
   { href: '#jobs', label: 'Ofertas' },
   { href: '#contact', label: 'Contacto' },
 ];
