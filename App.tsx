@@ -54,21 +54,35 @@ export default function App() {
         const data = await response.json();
         
         const formattedReviews: Review[] = data.records
+          .filter((record: any) => {
+            const fields = record.fields;
+            // A review is valid as long as it has text content.
+            return fields['Cuéntanos tu experiencia'];
+          })
+          .sort((a: any, b: any) => {
+            const idA = a.fields['Submission ID'];
+            const idB = b.fields['Submission ID'];
+
+            // Prioritize records with Submission ID, sorting them first.
+            if (idB && !idA) return -1; // B is newer/higher priority
+            if (!idB && idA) return 1;  // A is newer/higher priority
+            if (!idB && !idA) return 0; // No preference if both are missing
+
+            // If both IDs exist, sort them in descending order.
+            // localeCompare works for both text and numeric strings.
+            return String(idB).localeCompare(String(idA));
+          })
           .map((record: any) => {
             const fields = record.fields;
-            if (fields['Nombre'] && fields['Puntuación'] && fields['Cuéntanos tu experiencia']) {
-              return {
-                id: record.id,
-                author: `${fields['Nombre'] || ''} ${fields['Apellidos'] || ''}`.trim(),
-                role: fields['Tu Puesto'] || 'Miembro del equipo',
-                rating: parseInt(fields['Puntuación'], 10) || 5,
-                text: fields['Cuéntanos tu experiencia'],
-              };
-            }
-            return null;
-          })
-          .filter((review: Review | null): review is Review => review !== null)
-          .sort(() => 0.5 - Math.random()); // Randomize order
+            const authorName = `${fields['Nombre'] || ''} ${fields['Apellidos'] || ''}`.trim();
+            return {
+              id: record.id,
+              author: authorName || 'Anónimo',
+              role: fields['Tu Puesto'] || 'Miembro del equipo',
+              rating: parseInt(fields['Puntuación'], 10) || 5,
+              text: fields['Cuéntanos tu experiencia'],
+            };
+          });
 
         setReviews(formattedReviews);
       } catch (error) {
