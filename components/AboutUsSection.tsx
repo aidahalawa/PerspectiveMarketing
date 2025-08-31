@@ -13,7 +13,7 @@ const AboutUsSection: React.FC = () => (
       <div className="mt-12 grid grid-cols-1 items-center gap-12 md:grid-cols-2">
         <AnimateOnScroll>
           <img 
-            src="https://media.istockphoto.com/id/871460910/es/foto/otro-lugar-mejor-productividad.jpg?s=612x612&w=0&k=20&c=hpdmCIsEPRvCuJ3D7hFoUhu9QVfcuGQ3UEQ9tVzCquc=$0"
+            src="https://i.ibb.co/Rk9gQ6hS/istockphoto-871460910-612x612.jpg"
             alt="Equipo colaborando en un ambiente positivo y corporativo"
             className="rounded-2xl object-cover shadow-xl aspect-video"
           />
