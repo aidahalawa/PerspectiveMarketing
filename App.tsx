@@ -17,6 +17,7 @@ import Footer from './components/Footer';
 import Modal from './components/ui/Modal';
 import JobDetails from './components/JobDetails';
 import WhatsAppWidget from './components/ui/WhatsAppWidget';
+import InstallPWAButton from './components/ui/InstallPWAButton';
 
 const SECTION_IDS = ['home', 'testimonials', 'mission', 'about', 'benefits', 'impact', 'jobs', 'contact'];
 const JOBS_PER_PAGE = 5;
@@ -147,6 +148,7 @@ export default function App() {
       </main>
       <Footer />
       <WhatsAppWidget />
+      <InstallPWAButton />
     </>
   );
 }
